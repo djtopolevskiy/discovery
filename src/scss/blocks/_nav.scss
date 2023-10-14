@@ -1,0 +1,45 @@
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 32px;
+}
+
+.nav-list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 24px;
+	font-weight: normal;
+	line-height: 150%;
+
+	* {
+		color: #181818;
+	}
+
+	a:hover,
+	a.active {
+		color: #35aff4;
+	}
+
+	@include mediaMobile {
+		display: none;
+	}
+}
+
+.nav_btns {
+	display: flex;
+	gap: 12px;
+
+	@include mediaMobile {
+		display: none;
+	}
+}
+
+.nav_icon {
+	display: none;
+
+	@include mediaMobile {
+		display: block;
+	}
+}

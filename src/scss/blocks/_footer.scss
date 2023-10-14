@@ -1,0 +1,89 @@
+.footer {
+	background-color: #181818;
+	padding: 80px 0;
+	font-size: 16px;
+	color: #fff;
+
+	a {
+		color: #fff;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 450;
+		line-height: 150%; /* 24px */
+	}
+
+	a:hover {
+		color: aqua;
+	}
+}
+
+.foot_row {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 128px;
+	align-items: start;
+}
+
+.foot_logo_all {
+	display: grid;
+	gap: 24px;
+}
+
+.foot_logo {
+	width: 121.2px;
+	height: 24px;
+}
+
+.foot_text {
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 450;
+	line-height: 150%; /* 24px */
+}
+
+.foot_logo_item {
+	max-width: 300px;
+}
+
+.foot_nav {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: start;
+	column-gap: 40px;
+}
+
+.foot_company {
+	display: grid;
+	align-items: start;
+
+	li {
+		padding: 8px 0;
+	}
+}
+
+.foot_company_title {
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 150%; /* 27px */
+
+	margin-bottom: 16px;
+}
+
+.foot_help {
+	display: grid;
+	align-items: start;
+
+	li {
+		padding: 8px 0;
+	}
+}
+
+.foot_help_title {
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 150%; /* 27px */
+
+	margin-bottom: 16px;
+}

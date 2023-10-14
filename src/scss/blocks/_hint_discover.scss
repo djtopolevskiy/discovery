@@ -1,0 +1,103 @@
+.hint-discover {
+    display: flex;
+    // width: 324px;
+    // width: 57.75%;
+    width: calc(265px + 59 * ((100vw - 900px) / (1230 - 900)));
+
+    min-height: 79px;
+    // height: 12.34%;
+    padding: 12px;
+    align-items: flex-start;
+    gap: 16px;
+
+    position: absolute;
+    // left: 40px;
+    // left: 7.142%;
+    left: clamp(15px, 3.252vw, 40px);
+    // left: clamp(10px, 25px, 40px);
+    // top: clamp(40px, 65px, 90px);
+    // top: 5.625em;
+    // top: 90px;
+    // top: 14.0625%;
+    top: calc(20px + 70 * ((100vw - 600px) / (1230 - 600)));
+    // top: clamp(20px, 7.3171vw, 90px);
+    // top: min(10%, 640px);
+    // top: 5%;
+
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0px 4px 34px 0px rgba(50, 75, 104, 0.17);
+}
+
+.hint-discover_picture {
+    width: 58px;
+    flex-shrink: 0;
+    align-self: stretch;
+    overflow: hidden;
+
+    border-radius: 8px;
+    background:
+        url(./../../img/hints/coco-de-heaven.jpg),
+        lightgray 50% / cover no-repeat,
+        #909090;
+}
+
+.hint-discover_desc {
+    flex-grow: 1;
+}
+
+.hint-discover_title {
+    display: grid;
+    grid-template-columns: auto 19px 29px;
+    column-gap: 4px;
+    align-self: center;
+
+    color: #181818;
+    font-family: var(--font-main);
+    // font-size: 18px;
+    font-size: calc(8px + 10 * ((100vw - 320px) / (1230 - 320)));
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 27px */
+}
+
+.hint-discover_star {
+    width: 17px;
+    height: 16px;
+    align-self: center;
+}
+
+.hint-discover_rating {
+    color: #181818;
+    font-family: var(--font-main);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    align-self: center;
+}
+
+.hint-discover-text {
+    color: #909090;
+    // font-size: 16px;
+    font-size: calc(8px + 10 * ((100vw - 320px) / (1230 - 320)));
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.hint-discover-dollar {
+    color: #35aff4;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: 150%;
+}
+
+.hint-discover_price {
+    // font-size: 16px;
+    font-size: calc(8px + 10 * ((100vw - 320px) / (1230 - 320)));
+    font-style: normal;
+    font-weight: 550;
+    line-height: 150%; /* 24px */
+}

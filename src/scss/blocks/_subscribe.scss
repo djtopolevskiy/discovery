@@ -1,0 +1,49 @@
+.subscribe {
+    background: #35aff4;
+    overflow: hidden;
+}
+
+.sub_all {
+    position: relative;
+    display: flex;
+    padding: 80px 0px 80px 180px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sub_logo {
+    position: absolute;
+    top: -40px;
+    left: -78px;
+    width: 236px;
+    height: 273px;
+    flex-shrink: 0;
+}
+
+.sub_desk {
+    display: grid;
+    gap: 4px;
+}
+
+.sub_title {
+    align-self: stretch;
+    color: #fff;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.sub_text {
+    align-self: stretch;
+    color: #f0f0f0;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: normal;
+}
+
+.sub_input {
+}
+.sub_button {
+}

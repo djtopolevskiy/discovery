@@ -1,0 +1,40 @@
+.discover-scroll {
+    display: flex;
+    // width: 140px;
+    width: calc(80px + 60 * (((100vw / 2) - 320px) / ((1230 / 2) - 320)));
+
+    // height: 140px;
+    height: calc(80px + 60 * (((100vw / 2) - 320px) / ((1230 / 2) - 320)));
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.discover-scroll-letter {
+    animation: rotation 10s linear 0s infinite running normal;
+}
+
+.discover-scroll-mouse {
+    position: absolute;
+    display: flex;
+    // width: 49px;
+    // width: calc(49 * (100vw - 640px) / (1230 - 640));
+    width: calc(23px + 26 * (((100vw / 2) - 320px) / ((1230 / 2) - 320)));
+    // height: 80px;
+    // height: calc(80 * (100vw - 640px) / (1230 - 640));
+    height: calc(25px + 55 * (((100vw / 2) - 320px) / ((1230 / 2) - 320)));
+    // padding: 17px 12px 17px 11px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

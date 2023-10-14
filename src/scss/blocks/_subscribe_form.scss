@@ -1,0 +1,46 @@
+.sub_form {
+    display: flex;
+    gap: 14px;
+    margin-right: 24px;
+}
+.sub_input {
+    padding: 12px;
+    padding-left: 44px;
+    flex-grow: 1;
+
+    border-radius: 8px;
+    border: 1px solid #fff;
+    background: var(--White, #fff);
+
+    color: #181818;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 150%; /* 21px */
+
+    &::placeholder {
+        color: #909090;
+    }
+
+    background-image: url("./../../img/icons/email.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 12px 12px;
+}
+
+.sub_button {
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    border-radius: 8px;
+    background: #181818;
+
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 150%; /* 24px */
+}
