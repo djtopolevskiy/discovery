@@ -2,10 +2,10 @@ import Swiper from 'swiper';
 import 'swiper/css/bundle';
 
 function swiperfunc() {
-  const swiper1 = new Swiper('#testimonials-col-1', {
+  const config = {
     direction: 'vertical',
     slidesPerView: 'auto',
-    spaceBetween: 32,
+    // spaceBetween: 32,
     grabCursor: true,
     ally: false,
     freeMode: true,
@@ -15,37 +15,13 @@ function swiperfunc() {
       delay: 0.0,
       disableOnInteraction: false,
     },
-  });
+  };
 
-  const swiper2 = new Swiper('#testimonials-col-2', {
-    direction: 'vertical',
-    slidesPerView: 'auto',
-    spaceBetween: 32,
-    grabCursor: true,
-    ally: false,
-    freeMode: true,
-    speed: 4200,
-    loop: true,
-    autoplay: {
-      delay: 0.0,
-      disableOnInteraction: false,
-    },
-  });
+  const swiper1 = new Swiper('#testimonials-col-1', config);
 
-  const swiper3 = new Swiper('#testimonials-col-3', {
-    direction: 'vertical',
-    slidesPerView: 'auto',
-    spaceBetween: 32,
-    grabCursor: true,
-    ally: false,
-    freeMode: true,
-    speed: 4700,
-    loop: true,
-    autoplay: {
-      delay: 0.0,
-      disableOnInteraction: false,
-    },
-  });
+  const swiper2 = new Swiper('#testimonials-col-2', config);
+
+  const swiper3 = new Swiper('#testimonials-col-3', config);
 }
 
 export default swiperfunc;
