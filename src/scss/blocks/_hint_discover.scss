@@ -1,32 +1,21 @@
 .hint-discover {
     display: flex;
-    // width: 324px;
-    // width: 57.75%;
     width: calc(265px + 59 * ((100vw - 900px) / (1230 - 900)));
-
     min-height: 79px;
-    // height: 12.34%;
     padding: 12px;
     align-items: flex-start;
     gap: 16px;
-
     position: absolute;
-    // left: 40px;
-    // left: 7.142%;
     left: clamp(15px, 3.252vw, 40px);
-    // left: clamp(10px, 25px, 40px);
-    // top: clamp(40px, 65px, 90px);
-    // top: 5.625em;
-    // top: 90px;
-    // top: 14.0625%;
-    top: calc(20px + 70 * ((100vw - 600px) / (1230 - 600)));
-    // top: clamp(20px, 7.3171vw, 90px);
-    // top: min(10%, 640px);
-    // top: 5%;
-
+    top: calc(10px + 80 * ((100vw - 615px) / (1230 - 615)));
     border-radius: 12px;
     background: #fff;
     box-shadow: 0px 4px 34px 0px rgba(50, 75, 104, 0.17);
+
+    @media (min-width: 1231px) {
+        top: 90px;
+        width: 324px;
+    }
 }
 
 .hint-discover_picture {
@@ -59,6 +48,10 @@
     font-style: normal;
     font-weight: 600;
     line-height: 150%; /* 27px */
+
+    @media (min-width: 1231px) {
+        font-size: 18px;
+    }
 }
 
 .hint-discover_star {
@@ -84,6 +77,10 @@
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
+
+    @media (min-width: 1231px) {
+        font-size: 16px;
+    }
 }
 
 .hint-discover-dollar {
@@ -100,4 +97,8 @@
     font-style: normal;
     font-weight: 550;
     line-height: 150%; /* 24px */
+
+    @media (min-width: 1231px) {
+        font-size: 16px;
+    }
 }
