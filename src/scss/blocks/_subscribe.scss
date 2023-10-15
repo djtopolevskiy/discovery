@@ -6,7 +6,17 @@
 .sub_all {
     position: relative;
     display: flex;
-    padding: 80px 0px 80px 180px;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    padding-top: clamp(20px, 6.504vw, 80px);
+    padding-right: 0px;
+    padding-bottom: clamp(20px, 6.504vw, 80px);
+    // padding-left: clamp(20px, 14.634vw, 180px);
+    // padding-left: clamp(9.375vw, 14.634vw, 180px);
+    // @include adaptiv-value("padding-left", 180, 10, 2);
+    padding-left: calc(10px + 170 * ((100vw - 320px) / (1230 - 320)));
+    // padding-left: min(14.634%, 180px);
+    // padding: 80px 0px 80px 180px;
     justify-content: space-between;
     align-items: center;
 }
@@ -15,9 +25,10 @@
     position: absolute;
     top: -40px;
     left: -78px;
-    width: 236px;
+    // width: 236px;
+    width: clamp(30px, 19.186vw, 236px);
     height: 273px;
-    flex-shrink: 0;
+    flex-shrink: 1;
 }
 
 .sub_desk {
@@ -43,7 +54,18 @@
     line-height: normal;
 }
 
+.sub_form_all {
+}
+.sub_form {
+    flex-wrap: wrap;
+    align-items: start;
+    justify-items: start;
+    justify-content: start;
+}
 .sub_input {
+    // width: 328px;
+    width: clamp(280px, 26.66vw, 328px);
+    flex-grow: 0;
 }
 .sub_button {
 }
