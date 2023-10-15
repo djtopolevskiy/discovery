@@ -54,8 +54,6 @@
     line-height: normal;
 }
 
-.sub_form_all {
-}
 .sub_form {
     flex-wrap: wrap;
     align-items: start;
@@ -64,8 +62,6 @@
 }
 .sub_input {
     // width: 328px;
-    width: clamp(280px, 26.66vw, 328px);
+    width: clamp(260px, 26.66vw, 328px);
     flex-grow: 0;
-}
-.sub_button {
 }
