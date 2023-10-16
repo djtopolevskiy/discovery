@@ -1,32 +1,22 @@
 <div class="swiper-slide">
-  <div class="card_review">
-    <div class="card_stars">
-      @@rating @@for(i=0; i<context.rating;
-        i++)
-        {
-        <img
-        class="card_star_item"
-        src="./../../../img/icons/star.svg"
-        alt="star"
-      />} @@if(context.rating<5){ @@for(i=0; i<5-context.rating; i++) {
-      <img
-        class="card_staroff_item"
-        src="./../../../img/icons/star-off.svg"
-        alt="star"
-      />
-      } }
-    </div>
-    <div class="card_text">
-      <p class="card_text_item">@@text</p>
-    </div>
-    <div class="card_title">
-      <div class="card_foto">
-        <img class="card_face" src="./../../../img/testimonials/@@img" alt="" />
-      </div>
-      <div class="card_name">
-        <h4 class="card_name_item">@@name</h4>
-        <p class="card_aboutus">@@profi</p>
-      </div>
-    </div>
-  </div>
+	<div class="card_review">
+		<div class="card_stars">
+			@@rating @@for(i=0; i<context.rating; i++) { <img class="card_star_item" src="./../../../img/icons/star.svg" alt="star" />}
+			@@if(context.rating<5){ @@for(i=0; i<5-context.rating; i++) {
+			<img class="card_staroff_item" src="./../../../img/icons/star-off.svg" alt="star" />
+			} }
+		</div>
+		<div class="card_text">
+			<p class="card_text_item">@@text</p>
+		</div>
+		<div class="card_title">
+			<div class="card_foto">
+				<img class="card_face" src="./../../../img/testimonials/@@img" alt="card_face" />
+			</div>
+			<div class="card_name">
+				<h4 class="card_name_item">@@name</h4>
+				<p class="card_aboutus">@@profi</p>
+			</div>
+		</div>
+	</div>
 </div>
